@@ -1,7 +1,11 @@
 import React from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
 import { RiHome4Fill,RiSearchLine} from 'react-icons/ri';
-// import { FiSearch} from 'react-icons/fi';
+import { VscLibrary } from 'react-icons/vsc';
+import { BsFillPlusSquareFill } from 'react-icons/bs';
+import { AiFillHeart } from 'react-icons/ai';
+
 
 
 
@@ -17,16 +21,33 @@ const Sidebar = () => {
                 />
             </div>
             <nav className='pt-8'>
-                <ul className='flex flex-col gap-4'>
+                <ul className='flex flex-col gap-4 text-sm text-gray-300'>
                     <li>
-                        <a href='#' className='flex items-center gap-5 font-bold' >
-                            <RiHome4Fill  className='text-2xl fill-Spotify-white' /> Inicio
-                        </a>
+                        <Link href='#' className='flex items-center gap-5 font-bold hover:text-gray-50 transition-colors' >
+                            <RiHome4Fill  className='text-2xl' /> Inicio
+                        </Link>
                     </li>
                     <li>
-                        <a href='#' className='flex items-center gap-5 font-bold' >
-                            <RiSearchLine  className='text-2xl fill-Spotify-white' /> Buscar
-                        </a>
+                        <Link href='#' className='flex items-center gap-5 font-bold hover:text-gray-50 transition-colors' >
+                            <RiSearchLine  className='text-2xl' /> Buscar
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='#' className='flex items-center gap-5 font-bold hover:text-gray-50 transition-colors' >
+                            <VscLibrary  className='text-2xl' /> Tu biblioteca
+                        </Link>
+                    </li>
+                </ul>
+                <ul className='pt-8 flex flex-col gap-4 text-sm text-gray-300'>
+                    <li>
+                        <Link href='#' className='flex items-center gap-5 font-bold hover:text-gray-50 transition-colors' >
+                            <BsFillPlusSquareFill  className='text-2xl' /> Crear lista
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='#' className='flex items-center gap-5 font-bold hover:text-gray-50 transition-colors' >
+                            <AiFillHeart  className='text-2xl' /> Canciones que te gustan
+                        </Link>
                     </li>
                 </ul>
             </nav>

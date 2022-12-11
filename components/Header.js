@@ -8,6 +8,10 @@ const Header = () => {
       <div>
         <SlOptionsVertical />
       </div>
+      <div>
+        <h1>Esto es un texto</h1>
+
+      </div>
     </header>
 
   )

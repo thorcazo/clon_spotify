@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { RiHome4Fill, RiSearchLine } from 'react-icons/ri';
 import { VscLibrary } from 'react-icons/vsc';
 import { BsFillPlusSquareFill } from 'react-icons/bs';
-import { AiFillHeart } from 'react-icons/ai';
+import { AiFillHeart, AiFillYoutube } from 'react-icons/ai';
 
 
 
@@ -22,6 +22,7 @@ const Sidebar = () => {
                 </div>
                 <nav className='pt-8'>
                     <ul className='flex flex-col gap-4 text-sm text-gray-300'>
+
                         <li>
                             <Link href='#' className='flex items-center gap-5 font-bold hover:text-gray-50 transition-colors' >
                                 <RiHome4Fill className='text-2xl' /> Inicio
@@ -55,6 +56,7 @@ const Sidebar = () => {
             <div>
                 <nav >
                     <ul className='flex flex-col gap-y-2'>
+
                         <li>
                             <Link href='#' className='text-sm hover:underline'>Cookies</Link>
                         </li>

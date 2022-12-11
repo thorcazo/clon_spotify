@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       colors: {
         "Spotify-green": "#1DB954",
-        "Spotify-black": "#101010",
+        "Spotify-black-gray": "#101010",
+        "Spotify-black-dark": "#000",
         "Spotify-white": "#fff",
         "Spotify-gray": "#b3b3b3",
         "Spotify-gray-dark": "#808080",

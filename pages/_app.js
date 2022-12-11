@@ -2,7 +2,7 @@ import Head from 'next/head'
 import '../styles/globals.css'
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
-import { FaBeer } from 'react-icons/fa';
+
 
 function MyApp({ Component, pageProps }) {
   return ( 

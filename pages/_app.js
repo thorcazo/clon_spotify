@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Head from 'next/head'
 import '../styles/globals.css'
 import Header from '../components/Header'
@@ -5,6 +6,7 @@ import Sidebar from '../components/Sidebar'
 
 
 function MyApp({ Component, pageProps }) {
+  const [showSidebar, setshowSidebar] = useState(false)
   return (
     <>
       <Head>
@@ -14,8 +16,8 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <div className='bg-Spotify-black-gray min-h-screen text-gray-300'>
 
-        <Header />
-        <Sidebar />
+        <Header setshowSidebar={setshowSidebar} />
+        <Sidebar showSidebar={showSidebar} setshowSidebar={setshowSidebar} />
         <main>
           <Component {...pageProps} />
         </main>

@@ -12,7 +12,7 @@ module.exports = {
         "Spotify-black-dark": "#000",
         "Spotify-white": "#fff",
         "Spotify-gray": "#b3b3b3",
-        "Spotify-gray-dark": "#808080",
+        "Spotify-gray-dark": "#1F1F1F",
       }
     },
   },

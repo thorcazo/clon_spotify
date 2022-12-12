@@ -9,10 +9,10 @@ import { AiFillHeart, AiFillYoutube } from 'react-icons/ai';
 
 
 
-const Sidebar = (props) => {
-    const { showSidebar, setshowSidebar } = props;
+const Sidebar = () => {
+
     return (
-        <div className={`bg-Spotify-black-dark fixed top-0 w-60 h-full p-6  flex flex-col justify-between ${showSidebar ? "left-0" : "-leftfull"}md:left-0`}>
+        <div className={`bg-Spotify-black-dark fixed top-0 w-60 h-full p-6 -left-full flex flex-col justify-between`}>
             <div>
                 <div className=''>
                     <Image src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"

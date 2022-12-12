@@ -6,7 +6,6 @@ import Sidebar from '../components/Sidebar'
 
 
 function MyApp({ Component, pageProps }) {
-  const [showSidebar, setshowSidebar] = useState(false)
   return (
     <>
       <Head>
@@ -16,8 +15,8 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <div className='bg-Spotify-black-gray min-h-screen text-gray-300'>
 
-        <Header setshowSidebar={setshowSidebar} />
-        <Sidebar showSidebar={showSidebar} setshowSidebar={setshowSidebar} />
+        <Header />
+        <Sidebar />
         <main>
           <Component {...pageProps} />
         </main>
